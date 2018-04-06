@@ -75,8 +75,11 @@ else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
 
-"Always show current position
+" Always show current position
 set ruler
+
+" Display a vertical line at column 81
+set colorcolumn=81
 
 " Height of the command bar
 set cmdheight=2
@@ -124,7 +127,7 @@ endif
 
 
 " Add a bit extra margin to the left
-set foldcolumn=1
+set foldcolumn=2
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -263,7 +266,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 set laststatus=2
 
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+set statusline=\ Line:\ %l\ \ Column:\ %c\ \ \ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
