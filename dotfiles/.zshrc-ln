@@ -32,3 +32,35 @@ alias c_wk="workon"
 alias c_da="deactivate"
 alias c_mv="mkvirtualenv"
 
+#### docker ###########
+alias c_db="docker build -t "
+alias c_db_nc="docker build --no-cache -t "
+alias c_dp="docker ps"
+alias c_dt="docker stop "
+alias c_de="docker exec -it "
+
+#### docker-compose ###
+###### base ##
+alias c_dcu="docker-compose up "
+alias c_dcd="docker-compose down "
+alias c_dcr="docker-compose run "
+alias c_dcp="docker-compose pull"
+alias c_dcl="docker-compose logs "
+alias c_dcu_b="docker-compose up --build "
+alias c_dcu_f="docker-compose up --force-recreate --no-deps "
+alias c_dcl_f="docker-compose logs -f --tail "
+###### osf ###
+alias c_dcr_m="docker-compose run --rm web python manage.py "
+alias c_dcr_s="docker-compose run --rm web python -m "
+alias c_dcu_osf="docker-compose up --force-recreate --no-deps -d"\
+    "postgres elasticsearch"\
+    "rabbitmq worker wb_worker"\
+    "assets sharejs api web"\
+    "wb mfr"
+
+#### docker-sync ######
+alias c_dss="docker-sync start --foreground "
+alias c_dss_b="docker-sync start"
+alias c_dst="docker-sync stop "
+alias c_dsc="docker-sync clean"
+
