@@ -24,3 +24,11 @@ alias c_ss="cd ~/Projects/.scripts"
 alias c_vz="vim ~/.zshrc"
 alias c_sz="source ~/.zshrc"
 
+#### virtualenv #######
+export WORKON_HOME=$HOME/.virtualenv
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python@2/2.7.14_3/bin/python
+source /usr/local/bin/virtualenvwrapper.sh
+alias c_wk="workon"
+alias c_da="deactivate"
+alias c_mv="mkvirtualenv"
+
