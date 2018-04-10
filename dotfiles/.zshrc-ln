@@ -32,6 +32,9 @@ alias c_wk="workon"
 alias c_da="deactivate"
 alias c_mv="mkvirtualenv"
 
+#### rbenv ############
+eval "$(rbenv init -)"
+
 #### docker ###########
 alias c_db="docker build -t "
 alias c_db_nc="docker build --no-cache -t "
