@@ -35,6 +35,12 @@ alias c_mv="mkvirtualenv"
 #### rbenv ############
 eval "$(rbenv init -)"
 
+#### git ##############
+alias c_gfd="git fetch upstream develop"
+alias c_grd="git reset --hard upstream/develop"
+alias c_gfm="git fetch upstream master"
+alias c_grm="git reset --hard upstream/master"
+
 #### docker ###########
 alias c_db="docker build -t "
 alias c_db_nc="docker build --no-cache -t "
