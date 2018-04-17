@@ -166,8 +166,9 @@ set ffs=unix,dos,mac
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup off, since most stuff is in SVN, git et.c anyway...
-set nobackup
+" Turn on backup with backupcopy=yes to preserve hard link
+set backup
+set backupcopy=yes
 set nowb
 set noswapfile
 
